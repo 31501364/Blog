@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "hexo-util": "^0.6.3"
+  },
+  "scripts": {
+    "deploy": "hexo clean && hexo g -d"
   }
 }
