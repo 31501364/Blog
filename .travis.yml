@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '4'
+- '8'
 branches:
   only:
   - master
@@ -14,12 +14,11 @@ before_install:
 - git config --global user.name '31501364'
 - git config --global user.email 357216043@qq.com
 install:
-- npm install update-node
 - npm install -g hexo-cli --save
 - npm install -g yuque-hexo --save
 - npm install
 script:
 - npm run deploy
-# cache:
-#   directories:
-#   - node_modules
+cache:
+  directories:
+  - node_modules
